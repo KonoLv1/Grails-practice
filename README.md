@@ -12,7 +12,11 @@ https://github.com/grails/grails-core/releases
 
 ## コマンド
 
-アプリ「hoge」の生成
+* **アプリ「hoge」の生成**
 ```
 grails create-app hoge
+```
+* **コントローラー「hoge」の生成**
+```
+grails> create-controller hoge
 ```
