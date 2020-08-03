@@ -58,3 +58,6 @@ Exception in thread "main" java.lang.NoClassDefFoundError: Could not initialize 
         at org.grails.config.NavigableMap.<clinit>(NavigableMap.groovy)
         at org.grails.cli.GrailsCli.<clinit>(GrailsCli.groovy:77)
 ```
+```
+java.lang.NoClassDefFoundError：クラスorg.codehaus.groovy.vmplugin.v7.Java7を初期化できませんでした
+```
