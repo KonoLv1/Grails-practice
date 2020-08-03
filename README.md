@@ -61,3 +61,19 @@ Exception in thread "main" java.lang.NoClassDefFoundError: Could not initialize 
 ```
 java.lang.NoClassDefFoundError：クラスorg.codehaus.groovy.vmplugin.v7.Java7を初期化できませんでした
 ```
+**対策**
+2020年8月3日現在、Grails4.0.4は、JDK14に対応していないとのこと。
+Java11をダウンロードして環境パスに設定して再起動することにより解決した。
+
+1  https://www.oracle.com/java/technologies/javase-jdk11-downloads.html より<br>Windows x64 Compressed Archive　をダウンロードする。<br>
+2  ライセンスに同意したあとにログイン<br>
+3  ダウンロードが開始されるので任意の場所にダウンロード<br>
+4  ZIPを展開する<br>
+5  展開したフォルダの名前をJAVA_HOMEに変更する<br>
+6  JAVA_HOME内のbinフォルダのパスを取得する　例えば　C:\Users\user\Documents\DevelopParts\JAVA_HOEM\bin　とか。<br>
+7  画面左下のウインドウズボタンを左クリック、歯車（設定）を左クリック、システム＞バージョン情報＞システム情報＞システムの詳細設定<br>
+8  環境変数ボタンを押下、ユーザー環境変数のPathを選択し、編集ボタンを押下、新規ボタンを押して対策手順【6】のパスを登録<br>
+9  この際、他にJAVAのパスを登録してあれば、それより上に設定されるようにする<br>
+10 再起動すればOK<br>
+
+* Grailsの今後のバージョンアップでJDK14に対応する可能性あり。
