@@ -14,7 +14,7 @@ grails> run-app
 http://localhost:8080/hello/index
 
 
-## 導入（Windows向け）
+## 主要なコード
 
 **HelloController.groovy**
 ```groovy
