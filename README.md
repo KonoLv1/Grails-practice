@@ -16,6 +16,11 @@ https://github.com/grails/grails-core/releases
 ```
 grails create-app hoge
 ```
+
+* **アプリケーションの実行**
+```
+grails run-app
+```
 * **コントローラー「hoge」の生成**
 ```
 grails> create-controller hoge
