@@ -17,7 +17,13 @@ https://github.com/grails/grails-core/releases
 ```
 curl "https://get.sdkman.io" | bash
 ```
-注：curlコマンドは、HTTPアクセスでコンテンツを取得するコマンド
+注：curlコマンドは、HTTPアクセスでコンテンツを取得するコマンド<br>
+* SDKMANのパスを通す<br>
+ターミナルで下記を入力
+```
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+```
+
 
 
 ## コマンド
