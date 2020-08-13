@@ -12,6 +12,13 @@ https://github.com/grails/grails-core/releases
 
 ## 導入（Mac向け）
 
+* 導入しやすいようにSDKMANを導入する<br>
+ターミナルで下記を入力
+```
+curl "https://get.sdkman.io" | bash
+```
+注：curlコマンドは、HTTPアクセスでコンテンツを取得するコマンド
+
 
 ## コマンド
 
