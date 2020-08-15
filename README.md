@@ -41,3 +41,7 @@ grails run-app
 ```
 grails> create-controller hoge
 ```
+* **アプリケーションの停止**
+```
+grails stop-app
+```
