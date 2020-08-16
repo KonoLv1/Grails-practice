@@ -45,3 +45,7 @@ grails> create-controller hoge
 ```
 grails> stop-app
 ```
+* **ドメイン「hoge」の生成**
+```
+grails> create-domain hoge
+```
