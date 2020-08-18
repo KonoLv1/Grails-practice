@@ -49,3 +49,7 @@ grails> stop-app
 ```
 grails> create-domain-class hoge
 ```
+* **サービス「hoge」の生成**
+```
+grails> create-service hoge
+```
