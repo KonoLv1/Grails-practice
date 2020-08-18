@@ -3,11 +3,20 @@ package bbs
 class BbsController {
 
     def index() {
-        def p = Article.get(1)
-        render('name: ' + p.name)
+        render(view:'/bbs/index',model:[articles : Article.listOrderById(order: 'desc')])
     }
-    def create() {
-        def p = new Article(name: "Yamato", text: "ABC")
-        p.save()
+    def save() {
+        String name = params.name
+        String text = params.text
+        def newArticle = new Article(name: name, text: text)
+        if (newArticle.validate()) {
+            newArticle.save()
+            redirect(controller: "bbs", action: "index")
+        }else{
+            render(view:'/bbs/index',model:[errorArticle: newArticle, articles: Article.listOrderById()])
+        }
+    }
+    def delete(){
+
     }
 }
