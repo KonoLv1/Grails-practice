@@ -10,7 +10,10 @@ class UrlMappings {
         }
         get "/index/"(controller:'bbs', action: "index")
         get "/create/"(controller:'bbs', action: "create")
-        "/"(view:"/index")
+        "/"{
+            controller = "bbs"
+            action = "index"
+        }
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
